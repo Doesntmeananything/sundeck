@@ -16,7 +16,7 @@ export const Header = () => {
       align="center"
       justify="space-between"
       h={16}
-      px={4}
+      px={6}
       borderBottomWidth="1px"
     >
       <Heading as="h1" size="lg">
