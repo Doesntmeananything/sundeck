@@ -22,7 +22,7 @@ export const Header = () => {
             colorMode === "light" ? "dark" : "light"
           } mode`}
           variant="ghost"
-          fontSize="20px"
+          fontSize={20}
           onClick={toggleColorMode}
           icon={colorMode === "light" ? "moon" : "sun"}
         >
