@@ -1,4 +1,5 @@
 import { Flex, Heading, IconButton, useColorMode } from "@chakra-ui/core";
+import Link from "next/link";
 
 export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -13,7 +14,9 @@ export const Header = () => {
       borderBottomWidth="1px"
     >
       <Heading as="h1" size="lg">
-        Sundeck
+        <Link href="/">
+          <a>Sundeck</a>
+        </Link>
       </Heading>
 
       <Flex>
