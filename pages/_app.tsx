@@ -11,8 +11,7 @@ import Head from "next/head";
 enableAllPlugins();
 
 const customTheme = produce(theme, (newTheme) => {
-  newTheme.fonts.heading =
-    'Philosopher, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+  newTheme.fonts.heading = `Philosopher, ${theme.fonts.heading}`;
 });
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
