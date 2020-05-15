@@ -10,6 +10,10 @@ import Link from "next/link";
 export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const colorModeLabel = `Switch to ${
+    colorMode === "light" ? "dark" : "light"
+  } mode`;
+
   return (
     <Flex
       as="nav"
@@ -26,24 +30,14 @@ export const Header = () => {
       </Heading>
 
       <Flex>
-        <Tooltip
-          hasArrow
-          label={`Switch to ${colorMode === "light" ? "dark" : "light"} mode`}
-          aria-label={`Switch to ${
-            colorMode === "light" ? "dark" : "light"
-          } mode`}
-        >
+        <Tooltip hasArrow label={colorModeLabel} aria-label={colorModeLabel}>
           <IconButton
-            aria-label={`Switch to ${
-              colorMode === "light" ? "dark" : "light"
-            } mode`}
+            aria-label={colorModeLabel}
             variant="ghost"
             fontSize={20}
             onClick={toggleColorMode}
             icon={colorMode === "light" ? "moon" : "sun"}
-          >
-            Toggle {colorMode === "light" ? "Dark" : "Light"}
-          </IconButton>
+          />
         </Tooltip>
       </Flex>
     </Flex>
