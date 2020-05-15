@@ -1,7 +1,12 @@
-import { Header } from "shared/Header";
+import { Layout } from "shared/layout/";
+import { PlantList } from "components/PlantList";
 
 const Index = () => {
-  return <Header />;
+  return (
+    <Layout>
+      <PlantList />
+    </Layout>
+  );
 };
 
 export default Index;
