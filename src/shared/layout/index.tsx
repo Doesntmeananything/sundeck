@@ -1,9 +1,9 @@
 import { Header } from "./Header";
 import { Box } from "@chakra-ui/core";
 
-interface Props {
+type Props = {
   children: JSX.Element;
-}
+};
 
 export const Layout = ({ children }: Props) => {
   return (
