@@ -4,26 +4,24 @@ import {
   AccordionHeader,
   AccordionIcon,
   AccordionPanel,
-  Editable,
-  EditablePreview,
-  EditableInput
+  Box
 } from "@chakra-ui/core";
 
 export const PlantListItem = () => (
   <AccordionItem>
-    <AccordionHeader>
-      <Editable flex="1" textAlign="left" defaultValue="Aloe vera">
-        <EditablePreview />
-        <EditableInput />
-      </Editable>
+    <AccordionHeader px={6}>
+      <Box flex={1} textAlign="left">
+        Aloe vera 💧 🌱 🐄
+      </Box>
       <AccordionIcon />
     </AccordionHeader>
 
-    <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    <AccordionPanel pb={4} px={6}>
+      Aloe vera is a succulent plant species of the genus Aloe. An evergreen
+      perennial, it originates from the Arabian Peninsula, but grows wild in
+      tropical, semi-tropical, and arid climates around the world. It is
+      cultivated for agricultural and medicinal uses. The species is also used
+      for decorative purposes and grows successfully indoors as a potted plant.
     </AccordionPanel>
   </AccordionItem>
 );
