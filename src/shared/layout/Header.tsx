@@ -2,8 +2,8 @@ import {
   Flex,
   Heading,
   IconButton,
-  useColorMode,
-  Tooltip
+  Tooltip,
+  useColorMode
 } from "@chakra-ui/core";
 import Link from "next/link";
 
