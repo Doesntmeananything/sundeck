@@ -1,8 +1,8 @@
 import {
   Accordion,
-  AccordionItem,
   AccordionHeader,
   AccordionIcon,
+  AccordionItem,
   AccordionPanel,
   Box
 } from "@chakra-ui/core";
