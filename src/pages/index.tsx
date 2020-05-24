@@ -1,12 +1,10 @@
 import { Layout } from "shared/layout/";
-import { PlantList, PlantListItem } from "components/PlantList";
+import { PlantList } from "components/PlantList";
 
 const Index = () => {
   return (
     <Layout>
-      <PlantList>
-        <PlantListItem />
-      </PlantList>
+      <PlantList />
     </Layout>
   );
 };
